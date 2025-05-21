@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="spinner_category" type="id" />
+    <item name="spinner_type" type="id" />
+    <item name="et_date" type="id" />
+    <item name="et_title" type="id" />
+    <item name="et_amount" type="id" />
+
+
+</resources>

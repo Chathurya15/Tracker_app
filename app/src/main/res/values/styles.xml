@@ -1,0 +1,170 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Theme.FinanceTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/md_theme_dark_outline</item>
+        <item name="colorPrimaryContainer">@color/chip_state_color</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_light_onPrimaryContainer</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_light_onSecondaryContainer</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryContainer</item>
+
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/md_theme_light_error</item>
+        <item name="colorErrorContainer">@color/md_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_light_onErrorContainer</item>
+
+        <!-- Outline color -->
+        <item name="colorOutline">@color/md_theme_light_outline</item>
+
+        <!-- CardView style -->
+        <item name="materialCardViewStyle">@style/Widget.FinanceTracker.CardView</item>
+
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.FinanceTracker.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.FinanceTracker.Button.Outlined</item>
+
+        <!-- TextInputLayout style -->
+        <item name="textInputStyle">@style/Widget.FinanceTracker.TextInputLayout.OutlinedBox</item>
+
+        <!-- Progress indicator style -->
+        <item name="circularProgressIndicatorStyle">@style/Widget.FinanceTracker.CircularProgressIndicator</item>
+        <item name="linearProgressIndicatorStyle">@style/Widget.FinanceTracker.LinearProgressIndicator</item>
+
+        <!-- Chip styles -->
+        <item name="chipStyle">@style/Widget.FinanceTracker.Chip.Filter</item>
+    </style>
+
+    <!-- CardView style -->
+    <style name="Widget.FinanceTracker.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="strokeColor">?attr/colorOutline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="Widget.FinanceTracker.Button" parent="Widget.Material3.Button">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="iconPadding">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.LabelLarge</item>
+    </style>
+
+    <!-- Outlined button style -->
+    <style name="Widget.FinanceTracker.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/chip_state_color</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">@color/e</item>
+        <item name="iconPadding">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.LabelLarge</item>
+    </style>
+
+    <!-- TextInputLayout style -->
+    <style name="Widget.FinanceTracker.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">?attr/colorOutline</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="hintTextColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:textColorHint">?attr/colorOnSurfaceVariant</item>
+        <item name="startIconTint">?attr/colorOnSurfaceVariant</item>
+        <item name="endIconTint">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- Circular progress indicator style -->
+    <style name="Widget.FinanceTracker.CircularProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">@color/b</item>
+        <item name="trackColor">?attr/colorSurfaceVariant</item>
+        <item name="trackThickness">8dp</item>
+    </style>
+
+    <!-- Linear progress indicator style -->
+    <style name="Widget.FinanceTracker.LinearProgressIndicator" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="indicatorColor">@color/b</item>
+        <item name="trackColor">?attr/colorSurfaceVariant</item>
+        <item name="trackCornerRadius">4dp</item>
+    </style>
+
+    <!-- Chip style -->
+    <style name="Widget.FinanceTracker.Chip.Filter" parent="Widget.Material3.Chip.Filter">
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="chipBackgroundColor">@color/chip_state_color</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.LabelMedium</item>
+    </style>
+
+    <!-- Toolbar style -->
+    <style name="Widget.FinanceTracker.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:elevation">0dp</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Material3.TitleLarge</item>
+        <item name="titleTextColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- Text appearances -->
+    <style name="TextAppearance.FinanceTracker.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.FinanceTracker.Subtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- Empty state style -->
+    <style name="Widget.FinanceTracker.EmptyState" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">32dp</item>
+    </style>
+
+    <!-- Animation styles -->
+    <style name="Animation.FinanceTracker.Fab" parent="">
+        <item name="android:windowEnterAnimation">@anim/fab_show</item>
+        <item name="android:windowExitAnimation">@anim/fab_hide</item>
+    </style>
+   <!-->on boarding -->
+    <style name="Theme.Mad.NoActionBar" parent="Theme.Mad">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.Material3.Toolbar.Primary" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/md_theme_light_primary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Material3.TitleLarge</item>
+    </style>
+
+    <style name="Widget.Material3.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">?attr/colorOutline</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+</resources>
